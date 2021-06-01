@@ -1,0 +1,19 @@
+{
+  "name": "04.NodejsMultiTask",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bull": "^3.22.7",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node --presets-env"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4"
+  }
+}
