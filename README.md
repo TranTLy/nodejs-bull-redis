@@ -1,5 +1,5 @@
 # nodejs-bull-redis
-Multi process
+Multi processes in nodejs
 
 #Document https://notificare.com/blog/2020/10/23/Background-Tasks-With-Nodejs/
 
