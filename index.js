@@ -5,23 +5,16 @@ const q = new Queue('sample', 'redis://localhost:6379');
 const ACTION = ["LẤY CƠM", "ĂN CƠM", "NHAI", "NUỐT"]
 let currentAction = 0
 
-const doTask = async (index) => {
-    console.log("before do task ", index)
-    setTimeout(() => {
-        process.stdout.write("**********|");
-        process.stdout.write(index.toString());
-    }, index * 1000)
-    console.log("end do task ", index)
+const doTask = async () => {
+    for (let i = 0; i < 2000; i++) {
+        process.stdout.write("*");
+    }
 }
 
 const heavyTask = async () => {
-    console.log("before: ", new Date())
     for (let i = 0; i < 200; i++) {
         await doTask(i)
     }
-    setTimeout( () => {
-        console.log("end ", new Date())
-    }, 10000)
 }
 
 const init = async () => {
